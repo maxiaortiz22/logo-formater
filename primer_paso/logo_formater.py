@@ -79,6 +79,8 @@ class Logo:
         os.makedirs('Palabras juntas')
         
         os.makedirs('Listas - Calibradas')
+        os.makedirs('Listas - Calibradas Final')
 
         for lista in listas:
             os.makedirs(f'Listas - Calibradas/{lista}')
+            os.makedirs(f'Listas - Calibradas Final/{lista}')
