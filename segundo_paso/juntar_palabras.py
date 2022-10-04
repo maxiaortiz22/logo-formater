@@ -3,7 +3,7 @@ from scipy.io import wavfile
 import librosa as lb
 import numpy as np
 
-def juntar(group_name):
+def juntar():
     wavs_high_m = []
     wavs_medium_m = []
     wavs_low_m = []
@@ -37,7 +37,7 @@ def delete_silence(group_name):
     thresh = 1.0
     segment_size_t = 0.3
 
-    audios_high, audios_medium, audios_low, sr = juntar(group_name)
+    audios_high, audios_medium, audios_low, sr = juntar()
     audios = [audios_high, audios_medium, audios_low]
 
     for i, audio in enumerate(audios):

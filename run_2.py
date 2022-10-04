@@ -1,5 +1,4 @@
-"""Este script se corre primero para generar las carpetas de las listas y el template
-de los audios con low, medium y high."""
+"""Este script se corre para obtener las palabras sin silencios, para realizar la última calibración"""
 
 #Configuración:
 dir = r'C:\Users\maxia\OneDrive\Desktop\Palabras Audiocom Colombia' 
