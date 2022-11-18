@@ -45,20 +45,38 @@ def get_audios_info(excel_name, list_name_excel, list_name_internal_excel, voice
             table = audio.maketrans(str1, str2)
             audio = audio.translate(table)
 
+            pasar = 0
             for low_name in low:
-                if audio in low_name:
-                    name = low_name.split('.wav')[0]
-                    file_name_low_intensity.append(name)
+                
+                if pasar==0:
+                    if audio in low_name:
+                        name = low_name.split('.wav')[0]
+                        file_name_low_intensity.append(name)
+                        pasar = 1
+                else:
+                    continue
 
+            pasar = 0
             for medium_name in medium:
-                if audio in medium_name:
-                    name = medium_name.split('.wav')[0]
-                    file_name_medium_intensity.append(name)
+                
+                if pasar==0:
+                    if audio in medium_name:
+                        name = medium_name.split('.wav')[0]
+                        file_name_medium_intensity.append(name)
+                        pasar=1
+                else:
+                    continue
 
+            pasar = 0
             for high_name in high:
-                if audio in high_name:
-                    name = high_name.split('.wav')[0]
-                    file_name_high_intensity.append(name)
+                
+                if pasar==0:
+                    if audio in high_name:
+                        name = high_name.split('.wav')[0]
+                        file_name_high_intensity.append(name)
+                        pasar=1
+                else:
+                    continue
 
     assert(len(list_name)==len(list_name_internal))
     assert(len(list_name_internal)==len(word_group_name))

@@ -45,6 +45,8 @@ class Logo:
                 audio = audio.upper()
 
                 for word in words:
+                    word = word.upper()
+                    
                     if audio in word:
                         data, fs = load(word, sr=48000)
 

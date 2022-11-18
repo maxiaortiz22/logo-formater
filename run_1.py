@@ -2,9 +2,9 @@
 de los audios con low, medium y high."""
 
 #Configuración:
-dir = r'C:\Users\maxia\OneDrive\Desktop\Palabras Audiocom Colombia' 
-excel_lists = 'Listas Audiocom.xlsx' 
-group_name = 'audiocom'
+dir = r'F:\Desktop\uSound\Listas logoaudiometría\Bisílabos de Godoy' 
+excel_lists = 'bisílabos de godoy.xlsx' 
+group_name = 'bisilabos_godoy'
 
 if __name__ == '__main__':
     from primer_paso.logo_formater import Logo

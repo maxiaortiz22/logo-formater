@@ -1,11 +1,11 @@
 import pandas as pd
 import os
 
-dir = r'C:\Users\maxia\OneDrive\Desktop\Palabras Audiocom Colombia' #Cambiar por el que corresponda
+dir = r'F:\Desktop\uSound\Listas logoaudiometría' #Cambiar por el que corresponda
 
-columns = ['word_group_name']
-values_to_search = ['SRT']
-values_to_change = ['SRT-LRF']
+columns = ['list_name'] #list_name_internal
+values_to_search = ['Bisílabos de Godoy'] 
+values_to_change = ['Godoy - Bisílabos Niños'] 
 
 if __name__ == '__main__':
     os.chdir(dir)
