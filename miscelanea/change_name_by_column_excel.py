@@ -3,9 +3,9 @@ import os
 
 dir = r'F:\Desktop\uSound\Listas logoaudiometría' #Cambiar por el que corresponda
 
-columns = ['list_name'] #list_name_internal
-values_to_search = ['Bisílabos de Godoy'] 
-values_to_change = ['Godoy - Bisílabos Niños'] 
+columns = ['voice'] #list_name_internal
+values_to_search = ['pt_BR_Wavene_A'] #pt_BR_Wavene_A
+values_to_change = ['pt-br-wavenet-a'] #pt-br-wavenet-a
 
 if __name__ == '__main__':
     os.chdir(dir)
