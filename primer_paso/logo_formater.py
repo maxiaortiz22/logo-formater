@@ -4,6 +4,7 @@ from librosa import load
 from scipy.io import wavfile
 import os
 from glob import glob
+import numpy as np
 
 class Logo:
     
@@ -49,6 +50,8 @@ class Logo:
                     
                     if audio in word:
                         data, fs = load(word, sr=48000)
+
+                        data = data/np.max(np.abs(data))
 
                         audio = audio.lower()
                         table = audio.maketrans(str1, str2)

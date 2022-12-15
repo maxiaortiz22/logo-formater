@@ -2,9 +2,9 @@
 de los audios con low, medium y high."""
 
 #Configuración:
-dir = r'F:\Desktop\uSound\Listas logoaudiometría\Bisílabos de Godoy' 
-excel_lists = 'bisílabos de godoy.xlsx' 
-group_name = 'bisilabos_godoy'
+dir = r'C:\Users\maxia\OneDrive\Desktop\uSound\Logoaudiometría\Trisilabos srt' 
+excel_lists = 'trisilabos_srt.xlsx' 
+group_name = 'trisilabos_srt'
 
 if __name__ == '__main__':
     from primer_paso.logo_formater import Logo

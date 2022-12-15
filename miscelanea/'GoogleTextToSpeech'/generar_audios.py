@@ -2,7 +2,7 @@ import os
 import pandas as pd #  pip install numpy==1.19.3
 from google.cloud import texttospeech_v1
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"enhanced-ward-368814-a7ae0d39a822.json"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r"modern-index-371513-25e04072b080.json"
 
 # Instantiates a client
 client = texttospeech_v1.TextToSpeechClient()
@@ -12,8 +12,8 @@ if __name__ == '__main__':
 
     #Datos:
     genero = 'hombre' # 'mujer'
-    dir = r'F:\Desktop\uSound\Listas logoaudiometría\Bisílabos fonéticamente balanceados para adultos. Matrtínez y cols'
-    excel_lists = 'bisilabos martínez y cols.xlsx'
+    dir = r'C:\Users\maxia\OneDrive\Desktop\uSound\Logoaudiometría\Trisilabos srt'
+    excel_lists = 'trisilabos_srt.xlsx'
     
     os.chdir(dir)
     list_name = pd.read_excel(excel_lists)

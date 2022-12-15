@@ -1,12 +1,12 @@
 """Este script se corre para cargar los nombres de las palabras al csv"""
 
 #Configuración:
-dir = r'F:\Desktop\uSound\Listas logoaudiometría\Bisílabos fonéticamente balanceados para adultos. Matrtínez y cols' 
+dir = r'C:\Users\maxia\OneDrive\Desktop\uSound\Logoaudiometría\Trisilabos srt' 
 
-excel_name = 'bisilabos martínez y cols.xlsx' #Excel con las listas nuevas
-list_name_excel = 'Bisílabos fonéticamente balanceados para adultos' 
-list_name_internal_excel = 'bisilabos_martinez_cols'
-voice_excel = 'original'
+excel_name = 'trisilabos_srt.xlsx' #Excel con las listas nuevas
+list_name_excel = 'Ibero SRT (LI-SRT)' 
+list_name_internal_excel = 'ibero_srt_li_srt'
+voice_excel = 'es_us_wavenet_b'
 
 if __name__ == '__main__':
     from tercer_paso.add_names import add_names_to_words_excel_file
